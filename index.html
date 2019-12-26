@@ -17,7 +17,8 @@
 
     function playRound(playerSelection, computerSelection) {
         // Capitalize
-        playerSelection = playerSelection[0].toUpperCase() + playerSelection.slice(1).toLowerCase();
+        playerSelection = playerSelection[0].toUpperCase() +
+                playerSelection.slice(1).toLowerCase();
 
         if (playerSelection === computerSelection) {
             return `Draw! You both picked ${playerSelection}.`;
@@ -39,12 +40,14 @@
         computerScore = 0;
 
         for(let round = 1; round <= 5; round++) {
-            const playerSelection = prompt("Choose 'Rock', 'Paper' or 'Scissors': ", "Rock");
+            const playerSelection =
+                    prompt("Enter 'Rock', 'Paper' or 'Scissors': ", "Rock");
             const computerSelection = computerPlay();
             console.log(playRound(playerSelection, computerSelection));
         }
 
-        console.log(`Your score is ${playerScore}. Computer score is ${computerScore}.`);
+        console.log(`Your score is ${playerScore}.` +
+                ` Computer score is ${computerScore}.`);
 
         if (playerScore === computerScore) {
             console.log("Draw!");
