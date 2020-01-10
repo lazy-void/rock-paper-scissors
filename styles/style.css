@@ -160,13 +160,15 @@ body {
   transition-duration: 0.08s;
 }
 
-.button:hover, button:focus {
+.button:hover,
+.button:focus {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
+.button:focus,
 .button::-moz-focus-inner {
-  border: 0;
+  outline: none !important;
 }
 
 .button:active {
