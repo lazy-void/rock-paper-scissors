@@ -5,25 +5,36 @@
 <head>
     <meta charset="UTF-8">
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1 id="title">Rock Paper Scissors</h1>
-    <div id="choiceKeys">
-        <button id="rock" class="key">Rock</button>
-        <button id="paper" class="key">Paper</button>
-        <button id="scissors" class="key">Scissors</button>
-    </div>
-    <div id="currentRound">
-        <p></p>
-        <p></p>
-    </div>
-    <div id="scores">
-        <p>You: 0</p>
-        <p>AI: 0</p>
-    </div>
-    <div id="result">
-        <p></p>
+    <div class="game-container">
+        <h1 class="title">Rock Paper Scissors</h1>
+        <div class="scores-container">
+            <div id="human-badge" class="player-badge">Human</div><!--
+            --><div id="human-score" class="score">0</div><!--
+            --><div class="round-number">Round 1/5</div><!--
+            --><div id="computer-score" class="score">0</div><!--
+            --><div id="computer-badge" class="player-badge">AI</div>
+        </div>
+        <div class="battle-container">
+            <div id="human-choice" class="player-choice"></div>
+            <div class="versus-sign">VS</div>
+            <div id="computer-choice" class="player-choice"></div>
+        </div>
+        <div class="buttons-container">
+            <div class="choice-buttons">
+                <button id="rock" class="button"></button>
+                <button id="paper" class="button"></button>
+                <button id="scissors" class="button"></button>
+            </div>
+            <button id="restart-button" class="button">Restart</button>
+        </div>
+        <div class="result">
+            <p></p>
+        </div>
     </div>
     <script src="game.js"></script>
 </body>

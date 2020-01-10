@@ -1,0 +1,195 @@
+body {
+  height: 100vh;
+  background-color: white;
+  background-image: linear-gradient(15deg, #13547a 0%, #80d0c7 100%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.game-container {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  margin: 0;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 70px;
+  text-transform: capitalize;
+  text-align: center;
+  color: white;
+}
+
+.scores-container {
+  width: 500px;
+  height: 100px;
+  font-size: 50px;
+  margin: 50px auto 0 auto;
+  padding-top: 20px;
+  text-align: center;
+  background-color: rgba(52, 49, 49, 0.6);
+  box-shadow: 0px 0px 20px 7px rgba(52, 49, 49, 0.8);
+}
+
+.score {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+}
+
+#human-score {
+  top: 5px;
+  right: 57px;
+}
+
+#computer-score {
+  top: 5px;
+  left: -13px;
+}
+
+.player-badge {
+  display: inline-block;
+  position: relative;
+  width: fit-content;
+  height: fit-content;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+#human-badge {
+  top: 0;
+  right: 81px;
+}
+
+#human-score,
+#human-badge {
+  color: rgb(48, 189, 251);
+}
+
+#computer-badge {
+  top: 0;
+  left: 12px;
+}
+
+#computer-score,
+#computer-badge {
+  color: rgb(245, 173, 39);
+}
+
+.round-number {
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  right: 35px;
+  font-size: 20px;
+  font-weight: normal;
+  color: white;
+}
+
+.battle-container {
+  display: block;
+  position: relative;
+  top: 90px;
+  height: 220px;
+  width: 720px;
+  margin: auto;
+}
+
+.versus-sign {
+  display: block;
+  position: relative;
+  width: max-content;
+  height: max-content;
+  bottom: 75px;
+  left: 317px;
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  font-style: italic;
+}
+
+.player-choice {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 150px;
+  font-size: 40px;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 20px;
+  border-radius: 7px;
+  background-color: rgb(48, 189, 251);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.62);
+}
+
+#human-choice {
+  top: 35px;
+  left: 59px;
+}
+
+#computer-choice {
+  bottom: 195px;
+  left: 511px;
+  background-color: rgb(245, 173, 39);
+}
+
+.buttons-container {
+  display: block;
+  width: max-content;
+  height: max-content;
+  margin: 178px auto 0 auto;
+}
+
+.choice-buttons {
+  display: block;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 45% 40%;
+  background-color: rgba(255, 253, 253, 0.8);
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition-duration: 0.08s;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+  transform: translateY(0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#rock {
+  background-image: url("images/rock.png");
+  margin-right: 70px;
+}
+
+#paper {
+  background-image: url("images/paper-vertical.png");
+  margin-right: 70px;
+}
+
+#scissors {
+  background-image: url("images/scissors-vertical.png");
+}
+
+#restart-button {
+  position: relative;
+  visibility: hidden;
+  top: 48px;
+  left: 164px;
+  width: 120px;
+  height: 50px;
+  font-size: 30px;
+  color: #600b0b;
+}
