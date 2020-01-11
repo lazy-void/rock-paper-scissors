@@ -155,20 +155,13 @@ body {
   background-color: rgba(255, 253, 253, 0.8);
   border-radius: 5px;
   border: none;
-  outline: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   transition-duration: 0.08s;
 }
 
-.button:hover,
-.button:focus {
+.button:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
-}
-
-.button:focus,
-.button::-moz-focus-inner {
-  outline: none !important;
 }
 
 .button:active {
