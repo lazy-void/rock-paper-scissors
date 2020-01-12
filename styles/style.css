@@ -29,8 +29,9 @@ body {
   margin: 50px auto 0 auto;
   padding-top: 20px;
   text-align: center;
-  background-color: rgba(52, 49, 49, 0.6);
-  box-shadow: 0px 0px 20px 7px rgba(52, 49, 49, 0.8);
+  background-color: rgba(52, 49, 49, 0.75);
+  border-radius: 0;
+  box-shadow: 0px 0px 7px 10px rgba(52, 49, 49, 0.75);
 }
 
 .score {
@@ -169,6 +170,12 @@ body {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.not-active:hover,
+.not-active:active {
+  transform: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 #rock {
   background-image: url("../images/rock-vertical.png");
   margin-right: 70px;
@@ -183,13 +190,34 @@ body {
   background-image: url("../images/scissors-vertical.png");
 }
 
-#restart-button {
+.game-result-container {
+  display: block;
   position: relative;
   visibility: hidden;
-  top: 48px;
-  left: 164px;
-  width: 120px;
-  height: 50px;
-  font-size: 30px;
-  color: #600b0b;
+  bottom: 220px;
+  left: 0;
+  margin: 0 auto;
+  width: 330px;
+  height: 160px;
+  background-image: linear-gradient(to bottom, #ff0844d4 20%, #d26f6f 100%);
+  border-radius: 10px;
+  box-shadow: 0 20px 20px 4px rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.game-result-container p {
+  font-size: 40px;
+  margin: 0;
+  padding-top: 20px;
+  color: white;
+}
+
+#restart-button {
+  top: 0;
+  left: 0;
+  width: 110px;
+  height: 40px;
+  font-size: 25px;
+  margin-top: 25px;
+  background-color: white;
 }
